@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #9af4c2d6, #b2fc8adf, #7ab8d3d3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .stopwatch {
+    text-align: center;
+    background: linear-gradient(to bottom right, #a55dcccd, #6f08a2b7);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(51, 48, 48, 0.422);
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+    color: #121212;
+  }
+  
+  #display {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #dcf8a0e3;
+    letter-spacing: 2px;
+    animation: pulse 1s infinite alternate;
+    padding-bottom: 20px;
+  }
+  
+  .stopwatch-label {
+    font-size: 35px;
+    margin-bottom: 5px; /* Reduced margin */
+    color: #212121bb;
+  }
+  
+  .controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(to bottom right, #f3ae77d2, #f6ad72e4);
+    color: rgb(15, 15, 15);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .controls button:hover {
+    background: linear-gradient(to bottom right, #79f5aff0, #52a4f5ed);
+  }
+  
+  .controls button:active {
+    background: linear-gradient(to bottom right, #0099ee, #004c99);
+  }
+  
+  #laps {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  #laps li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #eef7ad;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
